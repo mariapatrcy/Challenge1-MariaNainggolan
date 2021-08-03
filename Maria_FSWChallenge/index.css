@@ -1,0 +1,297 @@
+/* font */
+/* h1 */
+body {
+    overflow-x: hidden;
+}
+.header-title-info {
+    padding: 180px 0 30px 0;
+    font-family : 'Bebas Neue', cursive;
+    font-size : 80px;
+    font-weight: bold;
+    font-style: normal;
+    letter-spacing: 0.3rem;
+  }
+  
+  .body-text {
+    font-family : 'Open Sans', sans-serif;
+    font-size : 18px;
+    font-style: normal;
+    letter-spacing: 0.1rem;
+  }
+  
+  .logo {
+    width: 80px;
+    padding: 20px;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+
+  .container {
+    width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+  
+  li {
+      list-style: none;
+      float: left;
+    }
+  
+  .btn-warning {
+    background: linear-gradient(194.68deg, #FFB548 11.27%, #F3AF34 90.4%);
+    color: black;
+  }
+  .btn-warning:hover {
+    background: linear-gradient(194.68deg, #FFB548 11.27%, #b98627);
+  }
+  .btn {
+      padding : 12px 24px;
+      border-radius : 4px;
+      font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+      font-size: 16px;
+    }
+  .btn-wrapper {
+    padding-top: 50px;
+  }
+  /* layar besar */
+  @media (min-width: 1200px) { 
+        .main { 
+            background-image: radial-gradient(189.96% 61.18% at 50% 38.82%, rgba(255, 181, 72, 0) 0%, rgba(52, 44, 29, 0.80319) 73.22%, #08090A 99.74%), url("/Users/gwendahasnaa/Maria_FSWChallenge/image/bg_page1.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            width: 100%;
+          }
+          .story-link {
+            position : absolute;
+            bottom   : 0;
+            right: 0;
+            left: 0;
+            text-align: center;
+            padding-bottom: 50px;
+          }
+        .page-2 { 
+          background-image: radial-gradient(136.03% 54.57% at 50% 48.04%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 60.63%, #080A0B 99.74%), url("/Users/gwendahasnaa/Maria_FSWChallenge/image/bg_page2.jpg");
+          height: 100vh; 
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover !important;
+          padding-top: 100px;
+          padding-left: 100px;
+        }
+        .carousel-image {
+          padding-top: 150px;
+        }
+        /* h3 */
+        .subtitle-info {
+          padding-top: 10px;
+          font-family : 'Bebas Neue', cursive;
+          font-size : 24px;
+          font-weight: bold;
+          font-style: normal;
+          letter-spacing: 0.1rem;
+        }
+        .subtitle-text {
+          font-family: 'Bebas Neue', cursive;
+          font-weight: bold;
+          font-size: 80px;
+        }
+        .page-3 {
+          background-image: radial-gradient(51.1% 80.48% at 30.85% 53.65%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 19.2%, rgba(4, 5, 6, 0.520671) 47.48%, #080A0B 99.74%), url("/Users/gwendahasnaa/Maria_FSWChallenge/image/bg_page3.jpg");
+          height: 100vh; 
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+        .feature-text {
+          padding-top: 50px;
+        }
+        .page-4 {
+          background-image: radial-gradient(51.1% 80.48% at 30.85% 53.65%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 19.2%, rgba(4, 5, 6, 0.520671) 47.48%, #080A0B 99.74%), url("/Users/gwendahasnaa/Maria_FSWChallenge/image/bg_page4.jpg");
+          height: 100vh; 
+          background-position: center;
+          background-repeat: no-repeat;
+          padding-top: 100px;
+          padding-left: 100px;
+        }
+        .page-5 {
+          background-image: radial-gradient(51.1% 80.48% at 30.85% 53.65%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 19.2%, rgba(4, 5, 6, 0.520671) 47.48%, #080A0B 99.74%), url("/Users/gwendahasnaa/Maria_FSWChallenge/image/bg_page5.jpg");
+          height: 100vh; 
+          background-position: center;
+          background-repeat: no-repeat;
+          padding-top: 80px;
+          padding-left: 100px;
+        }
+        .cardBody {
+            padding: 10px;
+          }
+        .page-6 {
+          background: #080A0B;
+          height: 100vh; 
+          background-position: center;
+          background-repeat: no-repeat;
+          padding-top: 100px;
+          padding-left: 100px;
+        }
+        .footer {
+          background: #080A0B;
+          font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+          font-size: 12px;
+          font-weight: bold;
+          padding-bottom: 50px;
+        }
+        .bg-page {
+          width: 80%;
+          margin-left: 50px;
+          background-image: radial-gradient(45.43% 53.19% at 50% 50%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 46.15%, #080A0B 99.74%);
+        }
+      }
+  /* layar kecil */
+  @media (max-width: 992px) { 
+    .main { 
+        background-image: radial-gradient(189.96% 61.18% at 50% 38.82%, rgba(255, 181, 72, 0) 0%, rgba(52, 44, 29, 0.80319) 73.22%, #08090A 99.74%), url("/Users/gwendahasnaa/Maria_FSWChallenge/image/bg_page1.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+    }
+    .story-link {
+        position : absolute;
+        bottom   : 0;
+        right: 0;
+        left: 0;
+        text-align: center;        
+      }
+  .page-2 { 
+    background-image: radial-gradient(136.03% 54.57% at 50% 48.04%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 60.63%, #080A0B 99.74%), url("/Users/gwendahasnaa/Maria_FSWChallenge/image/bg_page2.jpg");
+    height: 100vh; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 100px;
+  }
+  .carousel-image {
+    padding-top: 50px;
+  }
+  /* h3 */
+  .subtitle-info {
+    padding-top: 10px;
+    font-family : 'Bebas Neue', cursive;
+    font-size : 24px;
+    font-weight: bold;
+    font-style: normal;
+    letter-spacing: 0.1rem;
+    text-align: center;
+  }
+  .subtitle-text {
+    font-family: 'Bebas Neue', cursive;
+    font-weight: bold;
+    font-size: 80px;
+    text-align: center;
+  }
+  .page-3 {
+    background-image: radial-gradient(51.1% 80.48% at 30.85% 53.65%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 19.2%, rgba(4, 5, 6, 0.520671) 47.48%, #080A0B 99.74%), url("/Users/gwendahasnaa/Maria_FSWChallenge/image/bg_page3.jpg");
+    height: 100vh; 
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .feature-text {
+    padding-top: 50px;
+    padding-left: 100px;
+  }
+  .page-4 {
+    background-image: radial-gradient(51.1% 80.48% at 30.85% 53.65%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 19.2%, rgba(4, 5, 6, 0.520671) 47.48%, #080A0B 99.74%), url("/Users/gwendahasnaa/Maria_FSWChallenge/image/bg_page4.jpg");
+    height: 100vh; 
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 100px;
+    /* padding-left: 50px; */
+    background-size: cover;
+  }
+  .page-5 {
+    background-image: radial-gradient(51.1% 80.48% at 30.85% 53.65%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 19.2%, rgba(4, 5, 6, 0.520671) 47.48%, #080A0B 99.74%), url("/Users/gwendahasnaa/Maria_FSWChallenge/image/bg_page5.jpg");
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 50px;
+  }
+  .cardBody {
+    margin: 10px;
+  }
+  .page-6 {
+    background: #080A0B;
+    height: 50%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 50px;
+  }
+  .footer {
+    background: #080A0B;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    padding-bottom: 30px;
+    padding-top: 20px;
+  }
+  .body-text {
+    font-family : 'Open Sans', sans-serif;
+    font-size : 18px;
+    font-style: normal;
+    letter-spacing: 0.1rem;
+    text-align: center;
+  }
+  
+  }
+  nav {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .nav-style{
+    background-color: rgba(0, 0, 0, 0.75);
+  }
+  .text-rightlist {
+    padding-top: 100px;
+  }
+  .subtitle-page3 {
+    color: #FFB548;
+    padding-left: 50px;
+    margin-top: -50px;
+    
+  }
+  .sub-subtitletext {
+    padding-left: 50px;
+  }
+  .subtitle-page4 {
+    padding-top: 50px;
+    text-align: center;
+  }
+  .tableReq-text {
+    color: #FFB548;
+    font-weight: 500;
+    letter-spacing: 3px;
+    line-height: 10px;
+  }
+  
+  .avaPhoto {
+    width : 50px;
+    height: 50px;
+  }
+  .card-title {
+    color: #FFB548;
+  }
+  
+  hr {
+    border: 0;
+    border-top: 3px solid rgba(255, 255, 255, 0.3);
+  }
+  .row {
+    margin-right: -50px;
+    margin-left: -50px; 
+  }
+  

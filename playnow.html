@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="playnow.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script src="game.js"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+  <title>Rock Paper Scissors Game</title>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark nav-style">
+    <div class="container-fluid">
+      <a href="C:\Users\ASUS\Documents\Binar Academy\challenge-MariaNainggolan\index.html"><svg xmlns="http://www.w3.org/2000/svg" width="40"
+          height="60" fill="#724C21" class="bi bi-chevron-left" viewBox="0 0 16 16">
+          <path fill-rule="evenodd"
+            d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+        </svg></a>
+      <a class="navbar-brand logo-rps">
+        <img src="logo.png"
+          class="d-inline-block align-top" alt="">
+      </a>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <h2 class="nav-text pt-2 ">Rock Paper Scissors</h2>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <section>
+    <!-- Player 1 -->
+    <!-- besar -->
+    <div class="d-none d-sm-none d-lg-block">
+    <div class="row main-area">
+      <div class="col-lg-4 col-sm-6">
+        <h2 class="body-text text-center">PLAYER 1</h2>
+        
+        <div class="text-center">
+          <p>
+            <button id="batu_play">
+              <img src="batu.png"
+                class="d-inline-block align-top img-rps" alt=""></button>
+          </p>
+          <p>
+            <button id="kertas_play">
+              <img src="kertas.png"
+                class="d-inline-block align-top img-rps" alt=""></button>
+          </p>
+          <p>
+            <button id="gunting_play">
+              <img src="gunting.png"
+                class="d-inline-block align-top img-rps" alt=""></button>
+          </p>
+
+        </div>
+      </div>
+
+      <!-- VS -->
+      <div class="col-lg-4 col-sm-6">
+        <div id="resultbox">
+          <h1 class="body-text text-center vs-title vs-area" id="h1">VS</h1>
+        </div>
+
+        <!-- Reset -->
+        <div class="reset-game text-center">
+          <button id="reset">
+            <img src="refresh.png" class="d-inline-block align-top"
+              width="50" alt="">
+          </button>
+        </div>
+      </div>
+
+
+      <!-- Computer -->
+      <div class="col-lg-4 col-sm-6">
+        <h2 class="body-text text-center">COM</h2>
+        <div class="text-center">
+          <p>
+            <button id="batu_comp">
+              <img src="batu.png"
+                class="d-inline-block align-top img-rps-com" alt=""></button>
+          </p>
+          <p>
+            <button id="kertas_comp">
+              <img src="kertas.png"
+                class="d-inline-block align-top img-rps-com" alt=""></button>
+          </p>
+          <p>
+            <button id="gunting_comp">
+              <img src="gunting.png"
+                class="d-inline-block align-top img-rps-com" alt=""></button>
+          </p>
+        </div>
+      </div>
+    </div>
+    </div>
+
+
+    <!-- kecil -->
+    <div class="d-lg-none d-sm-block">
+    <div class="row main-area">
+      <div class="text-center">
+        <h2 class="body-text text-center">PLAYER 1</h2>
+           
+              <button id="batu_play">
+                <img src="batu.png"
+                  class="img-rps" alt=""></button>
+            
+              <button id="kertas_play">
+                <img src="kertas.png"
+                  class="img-rps" alt=""></button>
+            
+              <button id="gunting_play">
+                <img src="gunting.png"
+                  class="img-rps" alt=""></button>
+            
+        
+      </div>
+      <!-- VS -->
+      <div class="container vs-area">
+        <div id="resultbox">
+          <h1 class="body-text text-center vs-title" id="h1">VS</h1>
+        </div>
+
+        <!-- Reset -->
+        <div class="reset-game text-center">
+          <button id="reset">
+            <img src="refresh.png" class="d-inline-block align-top"
+              width="30" alt="">
+          </button>
+        </div>
+      </div>
+
+
+      <!-- Computer -->
+      
+      <div class="text-center">
+        <h2 class="body-text text-center">COM</h2>
+          
+            <button id="batu_comp">
+              <img src="batu.png"
+                class="d-inline-block align-top img-rps-com" alt=""></button>
+          
+            <button id="kertas_comp">
+              <img src="kertas.png"
+                class="d-inline-block align-top img-rps-com" alt=""></button>
+          
+            <button id="gunting_comp">
+              <img src="gunting.png"
+                class="d-inline-block align-top img-rps-com" alt=""></button>
+    </div>
+
+
+  </section>
+
+</body>
+
+</html>
