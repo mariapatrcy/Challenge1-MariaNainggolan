@@ -5,9 +5,11 @@ const batu_compi = document.getElementById('batu_comp');
 const kertas_compi = document.getElementById('kertas_comp');
 const gunting_compi = document.getElementById('gunting_comp');
 const winBox = document.getElementById('resultbox');
-const details = document.getElementById("h1");
-const reset = document.getElementById("reset");
+const details = document.getElementById('h1');
+const reset = document.getElementById('reset');
 const button = document.querySelector('button');
+const addElement1 = [...document.getElementsByClassName("dissap")];
+
 
 
 //Computer Random Choices
@@ -15,18 +17,17 @@ function comChoices() {
     var choices = ['Batu', 'Gunting', 'Kertas'];
     var randomChoices = Math.floor(Math.random() * 3);
     return choices[randomChoices];
-
 }
 //Change the color in the winbox
 function resultObject() {
     winBox.classList.add('winBox'),
-        inFo.setAttribute("style", "font-size:36px; color:white;");
+        details.setAttribute("style", "font-size:36px; color:white; padding-top:30px;");
 
 }
 function resultDraw() {
     winBox.classList.add('drawBox');
 
-    inFo.setAttribute("style", "font-size:36px; color:white;");
+    details.setAttribute("style", "font-size:36px; color:white; padding-top:30px;");
 
 }
 
@@ -34,7 +35,7 @@ function resultDraw() {
 function win() {
     console.log("Player 1 Win");
     resultObject();
-    details.innerText = "Player 1 WIN"
+    details.innerText = "Player 1 WIN";
 
 }
 
@@ -97,11 +98,12 @@ function gamePlay(humanUser) {
 
 //Human Choice
 function play() {
-    batu_human.addEventListener('click', function () {
+    batu_human.addEventListener("click", function () {
         this.classList.add('chosen');
         gamePlay("Batu");
+
         addElement1.forEach(addElement3 => {
-            addElement3.setAttribute("style", "cursor: not-allowed;pointer-events: none;")
+            addElement3.setAttribute("style", "cursor: not-allowed; pointer-events: none;")
         })
 
     })
@@ -110,7 +112,7 @@ function play() {
         this.classList.add('chosen');
         gamePlay("Kertas");
         addElement1.forEach(addElement3 => {
-            addElement3.setAttribute("style", "cursor: not-allowed;pointer-events: none;")
+            addElement3.setAttribute("style", "cursor: not-allowed; pointer-events: none;")
         })
     })
 
@@ -118,7 +120,7 @@ function play() {
         this.classList.add('chosen');
         gamePlay("Gunting");
         addElement1.forEach(addElement3 => {
-            addElement3.setAttribute("style", "cursor: not-allowed;pointer-events: none;");
+            addElement3.setAttribute("style", "cursor: not-allowed; pointer-events: none;");
         })
     })
 }
@@ -128,7 +130,7 @@ play();
 
 // Reset the game after playing
 reset.addEventListener('click', function () {
-    //window.location.reload();
+    // window.location.reload();
 
     addElement1.forEach(addElement2 => {
         addElement2.classList.remove('chosen')

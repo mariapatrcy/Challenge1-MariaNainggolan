@@ -36,13 +36,27 @@ button {
     background-color: Transparent;
     border-color: transparent;
 }
-.result-box {
+.winBox {
+    margin: 15px auto;
     height: 100px;
     place-items: center;
     background: #4C9654;
     border-radius: 10px;
-    margin:  15px auto;
-    padding: 15px;
+    /* padding: 15px; */
+}
+
+.drawBox {
+    margin: 15px auto;
+    height: 100px;
+    place-items: center;
+    background: #035B0C;
+    border-radius: 10px;
+    /* padding: 15px; */
+}
+
+.chosen {
+    background-color: #c4c4c4;
+    border-radius: 30px;
 }
 
 /* layar besar */
@@ -84,7 +98,7 @@ button {
     }
 
     .vs-title {
-        padding: 180px 0 30px 0;
+        /* padding: 180px 0 30px 0; */
         font-family : 'Bebas Neue', cursive;
         font-size : 80px;
         font-weight: bold;
