@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>User Game | All</title>
+    </head>
+    <body>
+        <% user_game.forEach(i => { %>
+        <div>
+            <p>Nama : <%= i.nama %></p>
+            <p>Username : <%= i.username %></p>
+            <p>Email : <%= i.email %></p>
+            <p>Password : <%= i.password %></p>
+            <a href="/user_game/<%= i.id %>">Add</a> 
+            <br>
+            <a href="/user_game/<%= i.id %>">Update</a> 
+            <br>
+            <a href="/user_game/erase">Delete</a> 
+
+        </div>
+        <%      }) %>
+    </body>
+</html>
