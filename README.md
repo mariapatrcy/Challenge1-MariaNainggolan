@@ -6,3 +6,7 @@ Cara menjalankan pada challenge ini :
 5. Untuk menambah, user akan dibawa ke path /user_game/create.
 6. Untuk update data, user bisa mengubahnya dengan menggunakan postman dengan path /user_game/update:id (tentukan id yg ingin diubah). 
 7. Untuk delete, user bisa dapat langsung menghapus datanya. Path yg digunakan adalah /user_game/erase:id . 
+8. Untuk menjalan user_game_biodata, 
+dapat dilakukan dengan mengubah user_id, dan nama pada file index.js. Kemudian jalan kan dengan node index.js, maka data tersebut akan masuk ke database menggunakan SELECT * FROM user_game_biodata;
+9. Untuk menjalan user_game_history, 
+dapat dilakukan dengan mengubah user_id, dan result pada file index.js. Kemudian jalan kan dengan node index.js, maka data tersebut akan masuk ke database menggunakan SELECT * FROM user_game_histories;
