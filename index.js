@@ -59,6 +59,30 @@ app.get('/users', (req, res) => {
       
         res.render('articles/create');
       });
+
+      //Menjalankan user_game_biodata
+      app.get('/user_game_biodata', (req,res) => {
+        user_game_biodata.create({
+          user_id : 2,
+          nama: 'maria',
+          approved: true
+        })
+        .then(user_game_biodata => { 
+          console.log(user_game_biodata)
+        })
+      })
+
+      //Menjalankan user_game_history
+      app.get('/user_game_history', (req,res) => {
+        user_game_history.create({
+          user_id : 2,
+          result: 'maria',
+          approved: true
+        })
+        .then(user_game_history => { 
+          console.log(user_game_history)
+        })
+      })
     
     // <-----  Error   ----->
     
