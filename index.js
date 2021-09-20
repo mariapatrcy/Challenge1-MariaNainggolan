@@ -173,7 +173,7 @@ app.get('/user_game/create', (req,res) => {
   })
   
   //delete data
-  app.get('/user_game/erase', (req,res) => {
+  app.get('/user_game/erase/:id', (req,res) => {
     user_game.destroy({
       where: {
         username : "maria"
@@ -200,7 +200,7 @@ app.get('/user_game/create', (req,res) => {
   })
   
   //PUT user_game - update/edit data
-  app.put('/user_game/:id', (req,res) => {
+  app.put('/user_game/update/:id', (req,res) => {
     user_game.update({
       username: req.body.username,
       email: req.body.email,
@@ -210,7 +210,10 @@ app.get('/user_game/create', (req,res) => {
       where: {id: req.params.id}
     })
     .then(user_game => {
-      res.status(201).json(user_game)
+      // res.status(201).json(user_game)
+      res.json ({
+        "message":"Data update"
+      })
     }) .catch(err => {
       res.status(422).json("Can't create data users")
     })

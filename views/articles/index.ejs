@@ -9,11 +9,11 @@
             <p>Username : <%= i.username %></p>
             <p>Email : <%= i.email %></p>
             <p>Password : <%= i.password %></p>
-            <a href="/user_game/<%= i.id %>">Add</a> 
+            <a href="/user_game/create">Add</a> 
             <br>
-            <a href="/user_game/<%= i.id %>">Update</a> 
+            <a href="/user_game/update/<%= i.id %>">Update</a> 
             <br>
-            <a href="/user_game/erase">Delete</a> 
+            <a href="/user_game/erase/<%= i.id %>">Delete</a> 
 
         </div>
         <%      }) %>
